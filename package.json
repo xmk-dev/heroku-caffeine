@@ -1,6 +1,6 @@
 {
   "name": "heroku-caffeine",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "keeps your Heroku dynos awake",
   "main": "src/index.js",
   "scripts": {
