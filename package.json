@@ -1,6 +1,6 @@
 {
   "name": "heroku-caffeine",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "keeps your Heroku dynos awake",
   "main": "src/index.js",
   "scripts": {
@@ -24,9 +24,12 @@
   },
   "keywords": [
     "heroku",
-    "dynos",
+    "caffeine",
+    "javascript",
+    "ping",
     "awake",
-    "caffeine"
+    "asleep",
+    "dynos"
   ],
   "author": "Marcin Kaminski",
   "license": "MIT",
