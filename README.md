@@ -7,6 +7,7 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/bd7d2545e1e2fb5aed9a/maintainability)](https://codeclimate.com/github/marcinxkaminski/heroku-caffeine/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/bd7d2545e1e2fb5aed9a/test_coverage)](https://codeclimate.com/github/marcinxkaminski/heroku-caffeine/test_coverage)
 [![Known Vulnerabilities](https://snyk.io/test/github/marcinxkaminski/heroku-caffeine/badge.svg?targetFile=package.json)](https://snyk.io/test/github/marcinxkaminski/heroku-caffeine?targetFile=package.json)
+[![BCH compliance](https://bettercodehub.com/edge/badge/marcinxkaminski/heroku-caffeine?branch=master)](https://bettercodehub.com/)
 [![npm version](https://badge.fury.io/js/heroku-caffeine.svg)](https://badge.fury.io/js/heroku-caffeine)
 
 
@@ -65,11 +66,6 @@ $ npm run test-coverage
 #### Lint Fix:
 ```sh
 $ npm run lint-fix
-```
-
-#### Snyk Fix:
-```sh
-$ npm run snyk-fix
 ```
 
 and many other helpful scripts available in package.json 🤓
