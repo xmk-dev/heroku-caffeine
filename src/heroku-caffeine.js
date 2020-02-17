@@ -6,6 +6,7 @@ const {
   endedPinging: sendEndedPingingIntervalEvent,
   error: sendErrorEvent,
   init: sendInitEvent,
+  getEventEmitter,
 } = require('./helpers/events');
 
 class HerokuCaffeine {
@@ -21,6 +22,7 @@ class HerokuCaffeine {
     this.urls = removeNotValidUrlsFromArray(urls);
     this.fetchOptions = fetchOptions;
     this.ids = [];
+    this.eventBus = getEventEmitter();
 
     sendInitEvent(this);
   }

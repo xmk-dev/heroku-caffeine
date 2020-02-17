@@ -28,6 +28,7 @@ jest.mock('../src/helpers/events', () => ({
   endedPinging: jest.fn(),
   error: jest.fn(),
   init: jest.fn(),
+  getEventEmitter: jest.fn(),
 }));
 
 describe('INDEX TEST', () => {

@@ -3,6 +3,8 @@ const { EVENTS_NAMES } = require('../data/constants');
 
 const eventEmitter = new events.EventEmitter();
 
+const getEventEmitter = () => eventEmitter;
+
 const sendEvent = (eventName, eventData) => {
   eventEmitter.emit(eventName, eventData);
 };
@@ -36,5 +38,5 @@ const endedPinging = (endedPingingData) => {
 };
 
 module.exports = {
-  init, warn, error, pinging, pinged, pingedAll, endedPinging, sendEvent,
+  init, warn, error, pinging, pinged, pingedAll, endedPinging, sendEvent, getEventEmitter,
 };

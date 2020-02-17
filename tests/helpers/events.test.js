@@ -20,6 +20,11 @@ describe('HELPERS: events', () => {
   const mockData = { some: 'mock', data: 'mock' };
   const mockEventEmitter = nativeEvents.EventEmitter.prototype.emit;
 
+  it('gets event emitter instance', () => {
+    const eventEmitter = events.getEventEmitter();
+    expect(eventEmitter).toBeDefined();
+  });
+
   it('sends init event', () => {
     events.init(mockData);
 
