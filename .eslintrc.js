@@ -1,8 +1,8 @@
 module.exports = {
   env: {
+    node: true,
+    es2020: true,
     browser: true,
-    commonjs: true,
-    es6: true,
   },
   extends: [
     'airbnb-base',
@@ -12,7 +12,7 @@ module.exports = {
     SharedArrayBuffer: 'readonly',
   },
   parserOptions: {
-    ecmaVersion: 2019,
+    ecmaVersion: 2020,
   },
   rules: {
     "no-console": ["error", { allow: ["warn", "error"] }],
