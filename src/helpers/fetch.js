@@ -21,9 +21,9 @@ const pingAllAppsFromUrls = async (urls, fetchOptions) => {
     const result = await Promise.all(pingRequests);
     events.pingedAll(urls);
     return result;
-  } catch (err) {
-    events.error(err);
-    throw err;
+  } catch (error) {
+    events.error(error);
+    throw error;
   }
 };
 

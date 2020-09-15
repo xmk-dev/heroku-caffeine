@@ -23,5 +23,4 @@ const removeNotValidUrlsFromArray = (urls) => {
   });
 };
 
-
 module.exports = { removeNotValidUrlsFromArray };

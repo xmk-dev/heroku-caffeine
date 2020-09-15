@@ -15,8 +15,8 @@ class HerokuCaffeine {
     urls = DEFAULT_HEROKU_CAFFEINE_CONFIG.urls,
     fetchOptions = DEFAULT_HEROKU_CAFFEINE_CONFIG.fetchOptions,
   }) {
-    if (!interval || typeof interval !== 'number') throw Error(MESSAGES.INTERVAL_MUST_BE_A_NUMBER);
-    if (!urls || !Array.isArray(urls)) throw Error(MESSAGES.URLS_MUST_BE_AN_ARRAY);
+    if (!interval || typeof interval !== 'number') throw new Error(MESSAGES.INTERVAL_MUST_BE_A_NUMBER);
+    if (!urls || !Array.isArray(urls)) throw new Error(MESSAGES.URLS_MUST_BE_AN_ARRAY);
 
     this.interval = interval;
     this.urls = removeNotValidUrlsFromArray(urls);
@@ -31,8 +31,8 @@ class HerokuCaffeine {
     try {
       const result = await pingAllAppsFromUrls(this.urls, this.fetchOptions);
       sendEndedPingingIntervalEvent(result);
-    } catch (err) {
-      sendErrorEvent(err);
+    } catch (error) {
+      sendErrorEvent(error);
     }
   }
 

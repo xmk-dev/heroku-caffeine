@@ -1,5 +1,4 @@
-const HerokuCaffeine = require('./index');
-
+const HerokuCaffeine = require('.');
 
 // eslint-disable-next-line no-console
 console.log('Starting heroku-caffeine on DEV env');

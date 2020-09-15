@@ -51,7 +51,7 @@ module.exports = {
       'error',
       { additionalRegexes: { 'Basic Auth': 'Authorization: Basic [A-Za-z0-9+/=]*' } },
     ],
-    'filenames/match-exported': [2, 'kebab'],
-    'filenames/no-index': 2,
+    'filenames/match-exported': [0, 'kebab'],
+    'filenames/no-index': 0,
   },
 };
