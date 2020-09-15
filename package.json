@@ -3,6 +3,9 @@
   "version": "1.3.0",
   "description": "keeps your Heroku dynos awake",
   "main": "src/index.js",
+  "engines": {
+    "node": ">=14.0.0"
+  },
   "scripts": {
     "clean": "rm -rf node_modules",
     "reinstall": "npm run clean && npm install",

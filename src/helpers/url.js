@@ -11,13 +11,13 @@ const warndAndSendEvent = (url) => {
   events.warn({ url, message: MESSAGES.WRONG_URL });
 };
 
-const isUrlValidHerokuApp = (url) => /^(http|https):\/\/.*\.herokuapp\.com$/.test(url);
+const getIsHerokuAppUrl = (url) => /^(http|https):\/\/.*\.herokuapp\.com$/.test(url);
 
 const removeNotValidUrlsFromArray = (urls) => {
   if (!Array.isArray(urls)) { return sendErrorAndReturnEmptyArray(); }
 
   return urls.filter((url) => {
-    const isHerokuAppUrl = isUrlValidHerokuApp(url);
+    const isHerokuAppUrl = getIsHerokuAppUrl(url);
     if (!isHerokuAppUrl) { warndAndSendEvent(url); }
     return isHerokuAppUrl;
   });

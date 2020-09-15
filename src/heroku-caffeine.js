@@ -38,7 +38,7 @@ class HerokuCaffeine {
 
   run() {
     const id = setInterval(this.intervalMainFunction, this.interval);
-    if (this.ids && Array.isArray(this.ids)) { this.ids.push(id); }
+    this.ids?.push?.(id);
   }
 
   stop() {
