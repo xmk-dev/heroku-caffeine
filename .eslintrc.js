@@ -1,12 +1,16 @@
 module.exports = {
   env: {
+    jest: true,
     node: true,
     es2020: true,
     browser: true,
   },
   extends: [
     'airbnb-base',
+    'plugin:jest/style',
+    'plugin:jest/recommended',
   ],
+  plugins: ['jest']
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
@@ -17,15 +21,4 @@ module.exports = {
   rules: {
     "no-console": ["error", { allow: ["warn", "error"] }],
   },
-  globals: {
-    describe: true,
-    context: true,
-    beforeEach: true,
-    afterEach: true,
-    it: true,
-    before: true,
-    after: true,
-    jest: true,
-    expect: true,
-  }
 };
