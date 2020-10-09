@@ -14,7 +14,7 @@ jobs:
 
   # BUILD, TEST COVERAGE, SNYK, LINT,
   install-and-test:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     strategy:
       matrix:
         node-version: [14.x]
@@ -24,23 +24,23 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: Install
+    - name: Install 🔧
       run:
         npm i
-    - name: Test Coverage
+    - name: Test Coverage 🧪
       run:
         npm run test-coverage
-    - name: ESLint
+    - name: ESLint 🚨
       run:
         npm run lint
       env:
         CI: true
-    - name: Code Coverage (CodeCov)
+    - name: Code Coverage (CodeCov) 🙈
       uses: codecov/codecov-action@v1
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
         fail_ci_if_error: true
-    - name: Code Coverage - CodeClimate
+    - name: Code Coverage - CodeClimate 🗻
       uses: paambaati/codeclimate-action@v2.3.0
       env:
         CC_TEST_REPORTER_ID: ${{secrets.CODE_CLIMATE_TOKEN}}
