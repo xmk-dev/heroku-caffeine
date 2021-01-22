@@ -47,6 +47,10 @@ module.exports = {
       parser: '@typescript-eslint/parser',
       plugins: ['@typescript-eslint'],
       extends: ['plugin:@typescript-eslint/recommended'],
+      rules: {
+        'no-useless-constructor': ['off'],
+        '@typescript-eslint/no-useless-constructor': ['error'],
+      },
     },
   ],
   rules: {

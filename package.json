@@ -11,8 +11,8 @@
     "reinstall": "npm run clean && npm install",
     "test": "jest",
     "test-coverage": "npm run test -- --coverage",
-    "lint": "eslint './src/**/*.{js,jsx}'",
-    "lint-fix": "eslint --fix './src/**/*.{js,jsx}'",
+    "lint": "eslint './src/**/*.{js,jsx,ts,tsx}'",
+    "lint-fix": "eslint --fix './src/**/*.{js,jsx,ts,tsx}'",
     "deploy": "npm publish",
     "deploy-beta": "npm publish --tag beta",
     "dev": "node src/demo.js"
