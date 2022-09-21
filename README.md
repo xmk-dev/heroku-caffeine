@@ -1,17 +1,6 @@
 
 # Heroku Caffeine
 
-[![N|Solid](https://github.com/marcinxkaminski/heroku-caffeine/blob/master/public/heroku-caffeine-banner.png?raw=true)](https://github.com/marcinxkaminski/heroku-caffeine/blob/master/public/heroku-caffeine-banner.png?raw=true)
-
-![CI](https://github.com/marcinxkaminski/heroku-caffeine/workflows/CI/badge.svg?branch=master)
-[![Maintainability](https://api.codeclimate.com/v1/badges/bd7d2545e1e2fb5aed9a/maintainability)](https://codeclimate.com/github/marcinxkaminski/heroku-caffeine/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/bd7d2545e1e2fb5aed9a/test_coverage)](https://codeclimate.com/github/marcinxkaminski/heroku-caffeine/test_coverage)
-[![Known Vulnerabilities](https://snyk.io/test/github/marcinxkaminski/heroku-caffeine/badge.svg?targetFile=package.json)](https://snyk.io/test/github/marcinxkaminski/heroku-caffeine?targetFile=package.json)
-[![BCH compliance](https://bettercodehub.com/edge/badge/marcinxkaminski/heroku-caffeine?branch=master)](https://bettercodehub.com/)
-[![npm version](https://badge.fury.io/js/heroku-caffeine.svg)](https://badge.fury.io/js/heroku-caffeine)
-
-
-
 Heroku Caffeine ☕️ keeps your Heroku dynos awake by perodically sending HTTP requests to your apps.
 
 
