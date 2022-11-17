@@ -17,7 +17,7 @@ module.exports = {
     'plugin:optimize-regex/recommended',
     'plugin:eslint-comments/recommended',
   ],
-    plugins: [
+  plugins: [
     'jest',
     'sonarjs',
     'unicorn',
@@ -42,14 +42,28 @@ module.exports = {
       files: ['**/*.md'],
       processor: 'markdown/markdown',
     },
+    {
+      files: ['**/*.ts'],
+      parser: '@typescript-eslint/parser',
+      plugins: ['@typescript-eslint'],
+      extends: ['plugin:@typescript-eslint/recommended'],
+      rules: {
+        'no-useless-constructor': ['off'],
+        '@typescript-eslint/no-useless-constructor': ['error'],
+      },
+    },
   ],
   rules: {
-    "no-console": ["error", { allow: ["warn", "error"] }],
+    'no-console': ['error', { allow: ['warn', 'error'] }],
     'simple-import-sort/sort': 'error',
     'import/prefer-default-export': 'off',
     'no-secrets/no-secrets': [
       'error',
-      { additionalRegexes: { 'Basic Auth': 'Authorization: Basic [A-Za-z0-9+/=]*' } },
+      {
+        additionalRegexes: {
+          'Basic Auth': 'Authorization: Basic [A-Za-z0-9+/=]*',
+        },
+      },
     ],
     'filenames/match-exported': [0, 'kebab'],
     'filenames/no-index': 0,
